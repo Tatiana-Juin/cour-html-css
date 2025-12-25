@@ -1,0 +1,99 @@
+<!-- indique au navigateur que ce sera une page HTML  -->
+<!DOCTYPE html>
+<!-- langue du site ou plutot de la page  -->
+<html lang="fr">
+    <!-- head => invisible pour l'utilisateur qui est sur le site a l'exception du title que l'on voie dans l'onglet du navigateur 
+     lien vers les page  css 
+    -->
+<!-- <nomBalise > </nomBalise> => balise en paire  -->
+    <head>
+        <!-- pour lire les caracteres speciaux  -->
+        <meta charset="UTF-8">
+        <!-- adapte au ecran  -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title => titre qui est visible dans l'onglet du navigateur
+        dans le title il faut mettre des mot cles pour le referencement (SEO)  -->
+        <title>Cour HTML </title>
+    </head>
+    <!-- toute la partie qui est visible sur le site -->
+    <body>
+        
+        <!-- < > => chevron -->
+         <!-- en tete de la page elle regoupe souvent le logo, une barre de recherche et meme un menu de navigation  -->
+         <header>
+            <!-- pour créer la barre de navigation tu utilise la balise <nav> . -->
+            <nav>
+                <!-- liste non ordonnée 
+                 ul => liste non ordonnée -->
+                <ul>
+                    <!-- element de la liste  -->
+                    <li>
+                        <!-- pour créer des lien vers une page
+                        href => attribut
+                        # => valeur de l'attribut   
+                        -->
+                         <a href="#">
+                            Accueil
+                         </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            blog
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+
+         </header>
+
+         <!-- main => ATTENTION IL NE DOIT ETRE PRESENT QUE 1 SEULE FOIS SUR LA PAGE 
+         Attention tu ne doit pas mettre le <header>le footer et potentielement le aside  
+         -->
+            <main>
+                <!-- permet de regrouper du contenu en fonction d'une thematique contient un titre et un texte au minimum  -->
+                 
+                <!-- Il existe plusieurs niveau de titre 
+                ATTENTION lE <h1> NE DOIT APPARAITRE QUE 1 SEULE FOIS  
+                    on peut avoir plusieurs  fois <h2><h3><h4> <h5> <h6> 
+                        ce sont des balise en paire 
+                -->
+                        <h1>Blog</h1>
+
+                <section>
+                    
+                    <!-- Pour dire que le contenu a l'interrieur de la balise ouvrante <article> et la balise femante </article> est un article  -->
+
+                    <h2>Nos derniers acticles sur le code </h2>
+
+                    <article>
+                        <h3>Un titre de niveau 3 </h3>
+                        <!-- pour creer un paragraphe on utilise <p> -->
+                        <p>Lorem span ipsum dolor sit amet consectetur adipisicing elit.
+                               
+                        Recusandae, saepe!</p>
+                         <!--pour aller a la ligne   -->
+                        <br> 
+                        <a href="#">En savoir plus </a>
+                    </article>
+                    <article>
+                        <h3>Un titre de niveau 3 article 2 </h3>
+                        <!-- pour creer un paragraphe on utilise <p> -->
+                        <p>Lorem span ipsum dolor sit amet consectetur adipisicing elit.
+                               
+                        Recusandae, saepe!</p>
+                         <!--pour aller a la ligne   -->
+                        <br> 
+                        <a href="#">En savoir plus </a>
+                    </article>
+
+                </section>
+            </main>
+
+            <!-- bas de la page il regroupe generalement les liens pour etre contacter, les différentes pages  -->
+             <footer>
+                <p>Cour de 2025</p>
+             </footer>
+    </body>
+</html>
