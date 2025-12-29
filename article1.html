@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1</title>
+</head>
+<body>
+    <header>
+            <!-- pour créer la barre de navigation tu utilise la balise <nav> . -->
+            <nav>
+                <!-- liste non ordonnée 
+                 ul => liste non ordonnée -->
+                <ul>
+                    <!-- element de la liste  -->
+                    <li>
+                        <!-- pour créer des lien vers une page
+                        href => attribut
+                        # => valeur de l'attribut   
+                        -->
+                         <a href="#">
+                            Accueil
+                         </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            blog
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+
+    </header>
+
+    <main>
+        <article>
+            <h1>Article 1</h1>
+                <!-- Pour regrouper le contenu (image +  legende) -->
+            <figure>
+                <!-- 
+                Pour inserer  une image on doit utiliser img
+                src=> On va mettre le chemin pour trouver l'image a partir de ce fichier 
+                alt => description de ton image . C'est tres important pour l'accesibilité  
+                -->
+                <img src="assets/img/cookie.jpg" alt="On peut voir sur l'image un logo qui decris une balise qui est dans un rond rose ">
+                <!-- Pour créer la legende de l'image  -->
+                <figcaption>Description de l'image </figcaption>
+            </figure>
+
+            <section>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, commodi.</h2>
+
+                <!-- 
+                    strong => text en gras
+                    Tu dois mettre des mot cles pour le referencement 
+                -->
+                <p> Lorem ipsum dolor sit amet consectetur <strong> adipisicing elit.</strong>  Iste officiis expedita magni repellat quidem mollitia.</p>
+            </section>
+
+            <section>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, commodi.</h2>
+
+                <!--  span => sert a ciblé une partie du texte pour etre styliser . C'est a dire que les element entre la balise ouvrante et fermante auront un style différent du reste du texte  -->
+                <p> Lorem ipsum dolor sit amet consectetur <span> adipisicing elit.</span>  Iste officiis expedita magni repellat quidem mollitia.</p>
+            </section>
+
+            <section>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, commodi.</h2>
+
+                <!-- 
+                    POUR LES CITATIONS
+                    q => creer des citation courte 
+                    blockquote =>  citation longue
+                    cite => pour citer la source ou l'oeuvre 
+                 
+                -->
+                    <p>Comme disait Einstein : <q>l’imagination est plus importante que le savoir</q>.</p>
+            </section>
+        </article>
+
+
+
+    </main>
+</body>
+</html>
