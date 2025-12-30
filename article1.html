@@ -18,7 +18,7 @@
                         href => attribut
                         # => valeur de l'attribut   
                         -->
-                         <a href="#">
+                         <a href="index.html">
                             Accueil
                          </a>
                     </li>
@@ -35,6 +35,7 @@
     </header>
 
     <main>
+        
         <article>
             <h1>Article 1</h1>
                 <!-- Pour regrouper le contenu (image +  legende) -->
@@ -78,6 +79,60 @@
                 -->
                     <p>Comme disait Einstein : <q>l’imagination est plus importante que le savoir</q>.</p>
             </section>
+
+            <section>
+                <h2>Commentaire</h2>
+                 <!-- Formulaire
+                    Sert à récuperer des donnée que l'utilisateur va entrer et les envoie au serveur pour les traiter par exemple en PHP. 
+                    On utilise les formulire pour une inscription , une  connexion etc. 
+                    <form> => permet de declarer le debut d'un formulaire
+                        - balise fom fonctionne avec 2 attribut 
+                            - action => dit ou on recupere les donnée envoyer . Adresse de la page ou du fichier qui va traiter les données envoyer
+                            - method => Permet de savoir si on recupere les donnée ou si elle sont envoyer 
+                                - 2 methode 
+                                    - get => information est passer dans la barre d'adresse, dans url
+                                    - POST => envoie des donnée dans le corp de la equete on ne le voie as dans url 
+                                        On utilise quand on ne veux pas queles donnée soit visible comme pour une inscription, connexion  
+                                    enctype -> on utilise quand on à 1 champs d'envoie de fichier dans le formulaire . 
+                -->
+                <form action="#" method="post"  enctype="multipart/form-data">
+                    <!--  etiquette du champs => definir le champs du formulaire
+                        for et id => doivent etre identiqu car il s'associe a ce label et quand on clique sur pseudo ca selectionne le champs automatiquement   -->
+                    <label for="pseudo">Pseudo</label>
+                    <!-- 
+                        permet de saisir 
+                        type => definir le type du champs => en claire si tu va saisir du texte, une date, password,
+                        
+                        name => nom pour envoyer les données au serveur . Mais on est pas encore la 
+
+                         id => identifiant unique relier au label . ATTENTION ON NE L'UTILISE QUE 1 FOIS 
+                    -->
+                    <input type="text" name="pseudo" id="pseudo">
+                   
+                    <label for="commentaire"> Commentaire</label>
+
+                    <!-- 
+                        zone de texte multiligne contrairement au input qui est sur une ligne 
+                        cols: taile de colonne 
+                        rows => nombre de ligne
+                    -->
+                    <textarea name="commentaire" id="commentaire" cols="25" rows="15"></textarea>
+                    <!-- 
+                        submit => envoye le formulaire les données 
+                        value => texte afficher dans le bouton 
+                    -->
+                    <input type="submit" value="envoyer">
+                </form>
+
+                 <!-- les div n'on aucune valeur semantique . C'est une balise de conteneur On l'utilise pour regrouper les element pour pouvoir appliquer du style CSS  -->
+                <div>
+                    <p>
+                        Nadia <br />
+                        super le site 
+                    </p>
+                </div>
+            </section>
+            
         </article>
 
 
