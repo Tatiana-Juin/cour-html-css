@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+*{
+    /* marge entre différent element  */
+    margin: 0;
+    /* marge interne  */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    
+    /* hauteur */
+    height:100%;
+    margin: 0;
+}
+
+body{
+    min-height:100vh;
+    background-color:aliceblue;
+    
+}
+h1{
+    /* couleur du texte */
+    color:#2d3748;
+    /* taille du texte  */
+    font-size:35px;
+    /* centrer le texte */
+    text-align:center;
+    /* text-transform => transformer le texte 
+    uppercase => majuscule  */
+    text-transform: uppercase;
+    /* Pour changer la police d'ecriture */
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+}
+/*
+    class => .NomdeLaClass 
+    id => #nomId
+*/
+.actualite{
+    font-size: 30px;
+    /* aligner le texte au centre  */
+    text-align:center;
+    /* marge => 20 en haurt 0 a droite 20 en bas 0 a gauche  */
+    margin: 20px 0 20px 0;
+    /* font-weight pour mettre le texte en gras  */
+    font-weight: 500;
+    color:#2d3748
+}
