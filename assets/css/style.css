@@ -45,5 +45,47 @@ h1{
     margin: 20px 0 20px 0;
     /* font-weight pour mettre le texte en gras  */
     font-weight: 500;
-    color:#2d3748
+    color:#2d3748;
 }
+
+.toute-actu{
+    /* border:1px solid blue;  */
+    /* 
+        flex permet de positionner les element qui sont a l'interrieur de lui qui est le  parent. 
+
+        Les element à l'interrieur du parent sont ls enfants 
+
+        Par defaut la direction (flex-direction) est en ligne (row) mais on peut le mettre en colonne (column)
+
+        A RETENIR : flex permet de positionner les element qui sont a l'interrieur . Par Defaut ces elements sont positionner en ligne (row) 
+
+        Par defaut l'axe principale est horizontal et l'axe secondaire est verticale 
+
+    */
+    display:flex;
+    /* mettre en colonne  */
+    flex-direction: column;
+    gap:40px;
+    /* l'element soit center au millieu de la page  */
+    align-items: center;
+    
+}
+.article-actu{
+    /* fond blanc */
+    background: #ffff;
+    /* definir des bordure => epaisseurBordure typeBordure couleurBordure */
+    border: 1px solid #f1f5f9;
+    /* pour arrondir les bord on utilise border-radius */
+    border-radius: 12px;
+    /* pour l'espace a l'interrieur de l'element . En clair ce sont les marge interne a l'element  */
+    padding: 45px ;
+    /* width => largeur  */
+    width: 100%;
+    /* pour definir la largeur maximum  */
+    max-width: 450px; 
+    /*  */
+    display: flex;
+    flex-direction: column;
+}
+
+
