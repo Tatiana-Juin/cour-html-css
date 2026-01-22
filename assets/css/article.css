@@ -1,0 +1,48 @@
+*{
+    /* marge entre différent element  */
+    margin: 0;
+    /* marge interne  */
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --text-light: #a0aec0;   
+            --border-color: #f1f5f9; 
+    --bg-color: #ffffff;
+    --card-bg: #ffffff; */
+
+.article1{
+    background: #ffffff; 
+    padding:40px;
+    border-radius: 12px;
+}
+
+figure{
+    margin:30px 0;
+    text-align:center;
+}
+
+figure img{
+    width:400px;
+    height:300px;
+}
+
+figcaption{
+    margin-top: 10px;
+    font-size:16px;
+    color: #7f8c8d;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2{
+    font-size:18px;
+    margin-top:40px;
+    border-left:2px solid  #2d3748;
+    padding-left:15px;
+    color:#34495e;
+}
+
+p{
+    margin:  10px 0 20px 0;
+    /* text-align: justify;  */
+}

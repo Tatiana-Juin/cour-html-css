@@ -17,8 +17,17 @@ html,body{
 body{
     min-height:100vh;
     background-color:aliceblue;
+    /* Pour mettre une image en fond  */
+    /* background-image: url("../img/cookie.jpg"); */
+    /*  Pour que l'image couvre tout l'ecran en gardant ses dimensions */
+    /* background-size: cover; */
+    /* pour que l'image ne se repete pas  */
+    background-repeat: no-repeat;
+    /* Pour positionner l'image au centre  */
+    /* background-position: center; */
     
 }
+
 h1{
     /* couleur du texte */
     color:#2d3748;
@@ -88,4 +97,57 @@ h1{
     flex-direction: column;
 }
 
+.article-actu h3{
+    /* taille du texte */
+    font-size:20px;
+    /* epaisseur du texte comme le gras  */
+    font-weight:500;
+    /* couleur du texte  */
+    color:#2d3748;
+    /* marge du bas  */
+    margin-bottom: 20px;
+    text-align:center;
 
+}
+
+.article-actu  p {
+    font-size: 16px;
+    color:#4a5568;
+    margin-bottom: 20px;
+    font-weight:500;
+}
+
+.article-actu a{
+    display: block;
+    text-decoration:none;
+    color:#3182ce;
+    border:1px solid #3182ce;
+    padding:10px;
+    border-radius: 6px;
+    font-size:14px;
+    text-align: center;
+    font-weight:500;
+}
+
+.article-actu a:hover{
+    background-color: #3182ce ;
+    color:#ffff;
+    font-weight: 600;
+}
+
+footer{
+    padding:30px;
+    border-top:1px solid #f1f5f9;
+    text-align:center;
+    background:#fafafa;
+
+}
+
+footer p{
+    font-size:15px;
+    color:black;
+    text-transform: uppercase;
+}
+
+
+    

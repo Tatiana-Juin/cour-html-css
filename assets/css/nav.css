@@ -1,0 +1,31 @@
+/* E8EFFC */
+header{
+    background-color:#E8EFFC ;
+    padding:27px;
+    margin-bottom:30px;
+}
+
+header nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+ul{
+    /* ca enleve le style de la liste (les point) */
+   list-style: none;
+}
+
+ul li{
+    /* CTRL + : => racourcie commentaire  */
+    margin-top:20px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color:black;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
